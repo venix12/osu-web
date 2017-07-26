@@ -1,5 +1,4 @@
 ﻿<?php
-
 /**
  *    Copyright 2015-2017 ppy Pty. Ltd.
  *
@@ -224,13 +223,13 @@ return [
             'title' => 'Zaloguj się, aby zyskać dostęp',
 
             'error' => [
-                'email' => "Nazwa użytkownika bądź email nie istnieją",
+                'email' => 'Nazwa użytkownika bądź email nie istnieją',
                 'password' => 'Nieprawidłowe hasło',
             ],
         ],
 
         'register' => [
-            'info' =>'Potrzebujesz konta. Dlaczego go jeszcze nie masz?',
+            'info' => 'Potrzebujesz konta. Dlaczego go jeszcze nie masz?',
             'title' => 'Nie masz konta?',
         ],
     ],
