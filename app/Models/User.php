@@ -990,7 +990,8 @@ class User extends Model implements AuthenticatableContract
 
     public function getModeRank($mode)
     {
-	    $users = User::with("Statistics{$mode}");
+        $users = User::with("Statistics{$mode}");
+
 	    foreach ($users as $user) {
             return $user->statistics($mode, true)->rank;
         }
