@@ -987,6 +987,14 @@ class User extends Model implements AuthenticatableContract
     {
         return $this->belongsTo(Country::class, 'country_acronym');
     }
+    
+    public function getModeRank($mode)
+    {
+	    $users = User::with("Statistics{$mode}");
+	    foreach ($users as $user) {
+            return $user->statistics($mode, true)->rank;
+        }
+    }
 
     public function statisticsOsu()
     {
